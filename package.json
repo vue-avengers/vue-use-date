@@ -1,77 +1,90 @@
 {
-    "name": "vue-use-date",
-    "version": "1.0.0",
-    "module": "dist/vue-use-date.esm.js",
-    "unpkg": "dist/vue-use-date.js",
-    "main": "dist/vue-use-date.js",
-    "files": [
-        "dist/*.js"
+  "name": "vue-use-date",
+  "description": "Vue use date that have been brought together for you to use in all your components.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "module": "dist/vue-use-date.esm.js",
+  "unpkg": "dist/vue-use-date.js",
+  "main": "dist/vue-use-date.js",
+  "keywords": [
+    "vue",
+    "vue-use-date",
+    "date"
+  ],
+  "files": [
+    "dist/*.js"
+  ],
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build:docs": "vuepress build docs",
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "node ./scripts/build",
+    "publish": "npm run build",
+    "lint:eslint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
+    "lint:eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
+    "prettier": "prettier --config ./.prettierrc.js --ignore-path ./.prettierignore --write \"**/*.{js,json,css,scss,vue,html,md}\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-alias": "^2.2.0",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-replace": "^2.3.2",
+    "@vue/cli-plugin-babel": "^4.3.1",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "^4.3.1",
+    "@vue/composition-api": "^1.0.0-rc.6",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "bundlesize": "^0.18.0",
+    "chalk": "^4.0.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "dayjs": "^1.10.4",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "filesize": "^6.0.1",
+    "flush-promises": "^1.0.2",
+    "gzip-size": "^5.1.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "mkdirp": "^1.0.3",
+    "prettier": "^2.2.1",
+    "rollup": "^2.0.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "uglify-js": "^3.7.3",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-element-tabs": "^0.2.8"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/*.min.js",
+      "maxSize": "10 kB"
+    }
+  ],
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "yarn lint:eslint",
+      "yarn prettier"
     ],
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "lint": "vue-cli-service lint",
-        "build": "node ./scripts/build",
-        "publish": "npm run build"
-    },
-    "devDependencies": {
-        "dayjs": "^1.10.4",
-        "@babel/core": "^7.9.0",
-        "@babel/preset-env": "^7.9.5",
-        "@rollup/plugin-alias": "^2.2.0",
-        "@rollup/plugin-commonjs": "^11.1.0",
-        "@rollup/plugin-replace": "^2.3.2",
-        "@vue/cli-plugin-babel": "^4.3.1",
-        "@vue/cli-plugin-eslint": "~4.5.0",
-        "@vue/cli-service": "^4.3.1",
-        "@vue/composition-api": "^1.0.0-rc.6",
-        "babel-core": "^7.0.0-bridge.0",
-        "babel-eslint": "^10.1.0",
-        "babel-plugin-external-helpers": "^6.22.0",
-        "bundlesize": "^0.18.0",
-        "chalk": "^4.0.0",
-        "core-js": "^3.6.5",
-        "cross-env": "^7.0.2",
-        "eslint": "^6.7.2",
-        "eslint-plugin-vue": "^6.2.2",
-        "filesize": "^6.0.1",
-        "flush-promises": "^1.0.2",
-        "gzip-size": "^5.1.1",
-        "mkdirp": "^1.0.3",
-        "rollup": "^2.0.6",
-        "rollup-plugin-commonjs": "^10.1.0",
-        "rollup-plugin-node-resolve": "^5.2.0",
-        "rollup-plugin-replace": "^2.2.0",
-        "uglify-js": "^3.7.3",
-        "vue": "^2.6.11",
-        "vue-template-compiler": "^2.6.11"
-    },
-    "bundlesize": [
-        {
-            "path": "./dist/*.min.js",
-            "maxSize": "10 kB"
-        }
-    ],
-    "peerDependencies": {
-        "vue": "^2.6.11"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/essential",
-            "eslint:recommended"
-        ],
-        "parserOptions": {
-            "parser": "babel-eslint"
-        },
-        "rules": {}
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not dead"
-    ],
-    "license": "MIT"
+    "*.{json}": [
+      "yarn lint",
+      "yarn prettier"
+    ]
+  }
 }

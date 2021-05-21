@@ -1,8 +1,8 @@
-# :sparkles: useDate
+# :calendar: useDate
 
 > `useDate` It is a function that we have completed date operations in functions.
 
-## :maple_leaf: Usage
+## :convenience_store: Usage
 
 `useDate` function import.
 
@@ -69,7 +69,7 @@ new Vue({
 
 ## :rocket: Example
 
-Example.vue
+<I18nDateComponent />
 
 ```js
 <template>
