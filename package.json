@@ -78,12 +78,8 @@
     "vue": "^2.6.11"
   },
   "lint-staged": {
-    "*.{js,vue}": [
+    "*.{js,vue,json}": [
       "yarn lint:eslint",
-      "yarn prettier"
-    ],
-    "*.{json}": [
-      "yarn lint",
       "yarn prettier"
     ]
   }
