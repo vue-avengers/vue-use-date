@@ -1,7 +1,7 @@
 {
   "name": "vue-use-date",
   "description": "Vue use date that have been brought together for you to use in all your components.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "module": "dist/vue-use-date.esm.js",
   "unpkg": "dist/vue-use-date.js",
@@ -76,6 +76,11 @@
   ],
   "peerDependencies": {
     "vue": "^2.6.11"
+  },
+  "homepage": "https://github.com/cube-action-team/vue-use-date",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cube-action-team/vue-use-date.git"
   },
   "lint-staged": {
     "*.{js,vue,json}": [

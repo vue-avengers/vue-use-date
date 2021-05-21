@@ -6,6 +6,10 @@
 
 > `useDate` It is a function that we have completed date operations in functions.
 
+## :scroll: Documentation
+
+<a href="https://vue-use-date.netlify.app" target="_blank" rel="noopener noreferrer">Vue use date documentation</a>
+
 ## :maple_leaf: Usage
 
 `useDate` function import.
