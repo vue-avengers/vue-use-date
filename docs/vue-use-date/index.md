@@ -1,5 +1,4 @@
 <p align="center"><a href="/"><img src="https://vue-use-date.netlify.app/assets/vue-use-date.png" alt="vue-use-date logo"></a></p>
-<h1 align="center">Vue Use Date</h1>
 <p align="center">It's easy to use Vue Use Date APIs to parse, validate, manipulate, and display dates and times.</p>
 
 ## :rocket: Introduction
