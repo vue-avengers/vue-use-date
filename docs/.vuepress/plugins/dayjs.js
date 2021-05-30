@@ -2,6 +2,8 @@ import Vue from 'vue';
 import dayjs from 'dayjs';
 import 'dayjs/locale/tr';
 import 'dayjs/locale/ar';
+import 'dayjs/locale/es';
+import 'dayjs/locale/zh-cn';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import utc from 'dayjs/plugin/utc';

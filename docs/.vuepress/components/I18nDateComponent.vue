@@ -24,16 +24,24 @@ export default {
   name: 'I18nDateComponent',
   setup() {
     const date = new Date();
-    const selectedLang = ref('tr');
-    const langUnit = ref('tr');
+    const selectedLang = ref('en');
+    const langUnit = ref('en');
     const languages = ref([
+      {
+        key: 'en',
+        name: 'English',
+      },
+      {
+        key: 'es',
+        name: 'Spanish',
+      },
       {
         key: 'tr',
         name: 'Turkish',
       },
       {
-        key: 'en',
-        name: 'English',
+        key: 'zh-cn',
+        name: 'Chinese',
       },
       {
         key: 'ar',

@@ -22,9 +22,9 @@ It's easy to use Vue Use Date APIs to parse, validate, manipulate, and display d
 
 ```bash
 # install with yarn
-yarn add vue-use-date
+yarn add vue-use-date or yarn add @vue/composition-api vue-use-date
 # install with npm
-npm install vue-use-date
+npm install vue-use-date or npm install @vue/composition-api vue-use-date
 ```
 
 <ToggleDarkMode/>

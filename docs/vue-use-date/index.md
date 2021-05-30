@@ -19,12 +19,20 @@ yarn add vue-use-date
 npm install vue-use-date
 ```
 
-## :star: Use
+## :star: Usege
 
 | Name                      | Arguments | Returns                                             |
 | ------------------------- | --------- | --------------------------------------------------- |
 | [`useDate`](./useDate.md) | initial   | format, timeAgo, getDate, utc, timezone, difference |
 
 - [useDate](./useDate.md).
+
+## :bouquet: Example
+
+You can see how it changes reactively using the example below.
+
+<I18nDateComponent />
+
+<iframe src="https://codesandbox.io/embed/vue-use-date-ue7no?fontsize=14&hidenavigation=1&theme=dark"width="100%" height="500px"></iframe>
 
 <ToggleDarkMode/>

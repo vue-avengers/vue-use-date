@@ -1,7 +1,7 @@
 {
   "name": "vue-use-date",
   "description": "Vue use date that have been brought together for you to use in all your components.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "module": "dist/vue-use-date.esm.js",
   "unpkg": "dist/vue-use-date.js",
@@ -17,9 +17,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build:docs": "vuepress build docs",
-    "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint",
     "build": "node ./scripts/build",
+    "lint": "vue-cli-service lint",
     "publish": "npm run build",
     "lint:eslint": "eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
     "lint:eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .",
@@ -44,7 +43,7 @@
     "chalk": "^4.0.0",
     "core-js": "^3.6.5",
     "cross-env": "^7.0.2",
-    "dayjs": "^1.10.4",
+    "dayjs": "^1.10.5",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^8.1.0",
     "eslint-loader": "^4.0.2",
@@ -77,7 +76,7 @@
   "peerDependencies": {
     "vue": "^2.6.11"
   },
-  "homepage": "https://github.com/cube-action-team/vue-use-date",
+  "homepage": "https://vue-use-date.netlify.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/cube-action-team/vue-use-date.git"
