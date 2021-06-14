@@ -22,21 +22,6 @@ npm install vue-use-date or npm install @vue/composition-api vue-use-date
 
 > `useDate` It is a function that we have completed date operations in functions.
 
-## :rocket: Features
-
-- Reactivity system with Vue.js.
-- Written in Javascript.
-
-## :star: Usege
-
-| Name                      | Arguments | Returns                                             |
-| ------------------------- | --------- | --------------------------------------------------- |
-| [`useDate`](./useDate.md) | initial   | format, timeAgo, getDate, utc, timezone, difference |
-
-# :sparkles: useDate
-
-> `useDate` It is a function that we have completed date operations in functions.
-
 ## :scroll: Documentation
 
 <a href="https://vue-use-date.netlify.app" target="_blank" rel="noopener noreferrer">Vue use date documentation</a>
