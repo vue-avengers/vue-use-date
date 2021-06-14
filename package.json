@@ -1,7 +1,7 @@
 {
   "name": "vue-use-date",
   "description": "Vue use date that have been brought together for you to use in all your components.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "module": "dist/vue-use-date.esm.js",
   "unpkg": "dist/vue-use-date.js",
